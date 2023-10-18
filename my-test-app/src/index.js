@@ -1,14 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import AddProduct from "./components/AddProduct/Addproducts";
+import SignUpUser from "./components/SignUpUser/SignUp";
+
+const Index = () => {
+  return (
+    <div>
+      <AddProduct />
+      <SignUpUser />
+    </div>
+  );
+};
+
+const root = document.getElementById("root");
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Index />
+  </React.StrictMode>,
+  root
 );
 
 // If you want to start measuring performance in your app, pass a function

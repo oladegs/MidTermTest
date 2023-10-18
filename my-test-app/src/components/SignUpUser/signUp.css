@@ -1,0 +1,28 @@
+.hook {
+  width: 400px;
+  margin: 100px auto; /* Auto for left and right margins */
+  background-color: rgb(187, 130, 148);
+  display: flex; /* Add this line */
+  justify-content: center; /* Center horizontally */
+}
+
+.hook__text {
+  display: block;
+}
+.hook__input,
+.hook__button {
+  width: 100%;
+  font-size: 1.8rem;
+}
+.hook__input {
+  padding: 5px;
+}
+.hook__button {
+  padding: 10px;
+  margin-top: 10px;
+}
+.hook__error {
+  margin: 0;
+  font-size: 1.4rem;
+  color: red;
+}
